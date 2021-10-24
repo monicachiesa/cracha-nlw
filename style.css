@@ -1,0 +1,79 @@
+* {
+  margin: 0; /*Remove as margens de todos elementos */
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+html, body {
+      height: 100%;
+      --grey: hsl(240, 9%, 89%);
+      --black: hsl(240, 6%, 13%);
+}
+
+.avatar span {
+  position: absolute;
+  top: -15px;
+  z-index: 1;
+}
+
+.avatar > img {
+clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);  /* monta o polígono  */
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover; /* faz a imagem se adaptar a essas proporções */
+}
+
+.avatar {
+  width: 10rem;
+  margin: 11.5rem auto 0;
+  position: relative;
+}
+
+
+
+ body {
+ 
+      display: grid;
+      place-items: center;
+    
+    }
+    a {
+      color: rgb(155, 122, 122);
+      text-decoration: none;
+      margin-top: 0.25rem;
+      color: var(--grey);
+      display: flex;
+      gap: 0.75rem;
+      justify-content: center;
+      align-items: center;
+    }
+
+    p {
+      margin-top: 2rem;
+    }
+
+    ul {
+      margin-top: 2rem;
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+    }
+
+.content {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: var(--grey);
+}
+
+    main {
+      background: url(images/background.svg);
+      width: 375px; 
+      height: 812px;
+    }
